@@ -1,5 +1,5 @@
-function [t1, t2, v1, v2] = generate_bezier_triangle(n)
-    num = (n+1)*(n+2)/2;
+function [t1, t2, v1, v2] = generate_bezier_patch(n)
+    num = (n+1)^2;
     t1 = randn(3,num);
     t2 = randn(3,num);
     v1 = randn(3,num);
